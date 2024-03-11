@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<!--    Верхный LinearLayout  конпки назад-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+      <ImageView
+        android:id="@+id/NazadImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+          android:layout_marginLeft="10dp"
+          android:scaleType="centerInside"
+          android:adjustViewBounds="true"
+        android:src="@drawable/arrow_back" />
+
+        <ImageView
+            android:id="@+id/avatarImageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="270dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/more" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+<!--    cardview  avatarImageView-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="99dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Contact_name_color"
+        android:textSize="32sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+    android:id="@+id/NumberTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+77777777"
+    android:textColor="@color/Contact_number_color"
+    android:textSize="16sp"
+    android:layout_gravity="center_horizontal">
+    </TextView>
+
+<!--  LinearLayout для кнопок по вертикали-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="start"
+            android:layout_marginHorizontal="15dp"
+        android:background="@color/white" >
+
+
+            <!--  LinearLayout для кнопок  MessegeImageView -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="99dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/MessegeImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_button" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/MessageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Massage"
+                    android:textColor="@color/Message_imageview_color"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal">
+                </TextView>
+
+
+            </LinearLayout>
+            <!--  LinearLayout для кнопок  CallImageView -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="99dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/CallImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_button_call" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/CallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call"
+                    android:textColor="@color/Message_imageview_color"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal">
+                </TextView>
+
+
+            </LinearLayout>
+            <!--  LinearLayout для кнопок  MuteImageView -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="99dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/MuteImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_button_mute" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/MuteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mute"
+                    android:textColor="@color/Message_imageview_color"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal">
+                </TextView>
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        <!--  LinearLayout для кнопок по вертикали-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:background="@color/white" >
+            <TextView
+                android:id="@+id/MoreActionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More actions"
+                android:textSize="14sp"
+                android:textColor="@color/Message_imageview_color"
+                android:paddingStart="38dp"
+                android:drawablePadding="18dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/ViewMediaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/media"
+                android:drawablePadding="18dp"
+                android:paddingStart="38dp"
+                android:textSize="16sp"
+                android:text="View media"
+                android:gravity="center_vertical"
+                android:textColor="@color/View_media_color" />
+
+            <TextView
+                android:id="@+id/SearchInConversationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="18dp"
+                android:paddingStart="38dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:text="Search in conversation"
+                android:textColor="@color/View_media_color" />
+
+            <TextView
+                android:id="@+id/NotificationsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/notifications"
+                android:drawablePadding="18dp"
+                android:gravity="center_vertical"
+                android:paddingStart="38dp"
+                android:text="Notifications"
+                android:textColor="@color/View_media_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
