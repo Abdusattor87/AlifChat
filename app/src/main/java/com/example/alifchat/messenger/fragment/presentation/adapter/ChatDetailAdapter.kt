@@ -65,7 +65,6 @@ class ChatDetailAdapter(
 
     private companion object {
 
-
         const val MY_MESSAGE = 0
         const val FRIEND_MESSAGE = 1
         const val FRIEND_IMAGE_MESSAGE = 2
